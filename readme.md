@@ -40,5 +40,6 @@ https://hgu-ghost.netlify.app
 - 암호화 및 문서 비밀번호 지정법
 
     - `netlify.toml` 의 `[build]` 섹션에서 `command =` 여기에다가 `npx staticrypt site/* -r -d site --short --template password_template.html` 명령어를 추가하시면 됩니다.
+    - 예시: `command = "python config.py -c && mkdocs build && npx staticrypt site/* -r -d site --short --template password_template.html"`
     - 비빌번호는 netlify 사이트 설정에서 환경변수에서 설정.
     - https://github.com/robinmoisson/staticrypt, https://robinmoisson.github.io/staticrypt/ 참고해서 사이트 전체 암호화 설정 할 수 있고, 별개 페이지만 암호화 할 수 있습니다.
