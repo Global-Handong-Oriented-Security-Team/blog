@@ -1,0 +1,498 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { font-family: 'GangwonEdu_OTFBoldA_한자제거'; src: url('GangwonEdu_OTFBoldA_한자제거.ttf'); }
+@font-face { font-family: 'GangwonEdu_OTFLightA_한자제거'; src: url('GangwonEdu_OTFLightA_한자제거.ttf'); }
+@font-face { font-family: 'GangwonEdu_OTFLightA_한자제거_줄간격증가'; src: url('GangwonEdu_OTFLightA_한자제거_줄간격증가.ttf'); }
+
+@font-face { font-family: 'D2Coding'; src: url('D2Coding-Ver1.3.2-20180524/D2Coding/D2Coding-Ver1.3.2-20180524.ttf'); }
+@font-face { font-family: 'D2Coding-Bold'; src: url('D2Coding-Ver1.3.2-20180524/D2Coding/D2CodingBold-Ver1.3.2-20180524.ttf'); }
+
+@font-face { font-family: 'NanumGothicCoding'; src: url('NanumGothicCoding-2.5/NanumGothicCoding.ttf'); }
+@font-face { font-family: 'NanumGothicCoding-Bold'; src: url('NanumGothicCoding-2.5/NanumGothicCoding-Bold.ttf'); }
+
+@font-face { font-family: 'FiraCode-Bold'; src: url('Fira_Code_v6.2/ttf/FiraCode-Bold.ttf'); }
+@font-face { font-family: 'FiraCode-Light'; src: url('Fira_Code_v6.2/ttf/FiraCode-Light.ttf'); }
+@font-face { font-family: 'FiraCode-Medium'; src: url('Fira_Code_v6.2/ttf/FiraCode-Medium.ttf'); }
+@font-face { font-family: 'FiraCode-Regular'; src: url('Fira_Code_v6.2/ttf/FiraCode-Regular.ttf'); }
+@font-face { font-family: 'FiraCode-Retina'; src: url('Fira_Code_v6.2/ttf/FiraCode-Retina.ttf'); }
+@font-face { font-family: 'FiraCode-SemiBold'; src: url('Fira_Code_v6.2/ttf/FiraCode-SemiBold.ttf'); }
+
+@font-face { font-family: 'Inconsolata'; src: url('Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf'); }
+@font-face { font-family: 'Inconsolata-Bold'; src: url('Inconsolata/static/Inconsolata/Inconsolata-Bold.ttf'); }
+
+@font-face { font-family: 'Berolina'; src: url('Berolina.ttf'); }
+@font-face { font-family: 'Cronus'; src: url('Cronus\ Round.otf'); }
+@font-face { font-family: 'Fibel'; src: url('Fibel\ Sued.ttf'); }
+@font-face { font-family: 'MotleyForcesRegular'; src: url('MotleyForcesRegular-w1rZ3.ttf'); }
+@font-face { font-family: 'SparkyStonesRegular'; src: url('SparkyStonesRegular-BW6ld.ttf'); }
+@font-face { font-family: 'WeddingdayPersonalUseRegular'; src: url('WeddingdayPersonalUseRegular-1Gvo0.ttf'); }
+@font-face { font-family: 'AnandaBlackPersonalUseRegular'; src: url('AnandaBlackPersonalUseRegular-rg9Rx.ttf'); }
+@font-face { font-family: 'Queensides'; src: url('Queensides-3z7Ey.ttf'); }
+@font-face { font-family: 'RonysiswadiArchitect6'; src: url('RonysiswadiArchitect6-X3V9G.ttf'); }
+@font-face { font-family: 'SummaryNotesRegular'; src: url('SummaryNotesRegular-Ea5ln.ttf'); }
+
+body {
+    /* font-family: 'GangwonEdu_OTFBoldA',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif !important; */
+    /* font-family: 'GangwonEdu_OTFLightA',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif !important; */
+    /* font-family: 'GangwonEdu_OTFBoldA_한자제거',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif !important; */
+    /* font-family: 'GangwonEdu_OTFLightA_한자제거_줄간격증가',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif !important; */
+    /* font-family: 'GangwonEdu_OTFLightA_한자제거_줄간격증가', 'Fibel' !important; */
+    font-family: 'GangwonEdu_OTFLightA_한자제거_줄간격증가', 'Inconsolata' !important;
+}
+
+:root {
+  --md-accent-fg-color: #00c9bf !important;
+  /* --md-accent-fg-color: #ff0 !important; */
+  /* --md-accent-fg-color: #3abfd6!important; */
+  /* --md-accent-fg-color: #564dd6; */
+  /* --md-default-fg-color: #564dd6; */
+  /* --def-color: #564dd6; */
+  /* --md-admonition-icon--def: url(../assets/images/bolt-solid.svg); */
+  --md-admonition-icon--def: url(../assets/images/ghost-solid.svg);
+}
+
+div.index {
+  font-family: 'Inconsolata';
+  line-height: 3.8px;
+  font-size: 20px !important;
+  /* overflow-x: visible !important;  */
+  white-space: nowrap;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+div.index span, div.index a {
+  /* word-break: break-all !important; */
+  /* font-family: 'Inconsolata-Bold', 'D2Coding' !important;  */
+  font-family:  'D2Coding' !important; 
+}
+
+footer.index {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+[data-md-color-primary="white"] {
+  --def-color: #5a3ef5;
+  /* --def-title-border-color: #0000; */
+  --def-title-border-color: #593ef533;
+  --word-color: #fff5ee;
+	/* --md-primary-fg-color: #fff; */
+  /* 
+#fdece0
+#fff5ee
+#fffaf0
+#f9f6ee
+#f2f3f4
+  */
+	--md-primary-fg-color: #f2f3f4; --md-default-bg-color: #f2f3f4; 
+	--md-primary-fg-color--light: hsla(0,0%,100%,0.7);
+	--md-primary-fg-color--dark: rgba(0,0,0,0.07);
+	--md-primary-bg-color: rgba(0,0,0,0.87);
+	--md-primary-bg-color--light: rgba(0,0,0,0.54);
+	--md-typeset-a-color: #5a3ef5;
+  --def-shadow-color: rgba(0, 0, 0, 0.464);
+  --md-header-shadow1: #0000001a;
+  --md-header-shadow2: #0003;
+  /* --def-title-background: #d3cfe9; */
+  --def-title-background: #bfcee9;
+  --svg-logo-color: invert(0%) sepia(6%) saturate(7500%) hue-rotate(284deg) brightness(94%) contrast(106%);
+  --md-accent-fg-color: #00c9bf !important;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #3abfd6 !important;
+  --md-accent-fg-color: #00c9bf !important;
+  /* --md-accent-fg-color: #3abfd6!important; */
+  /* --def-color: #3abfd6; */
+  --svg-logo-color: invert(94%) sepia(16%) saturate(879%) hue-rotate(301deg) brightness(104%) contrast(90%);
+  --def-color: #fff8b5; 
+  --def-title-border-color: #fff8b546; 
+  /* --def-shadow-color: rgba(255, 248, 181, 0.419);  */
+  --def-shadow-color: rgba(255, 251, 212, 0.259);
+  /* --def-title-background: #262830; */
+  --def-title-background: #15161b;
+
+  /* #00c9bf; */
+  /* rgb(0, 201, 191); */
+  /* --def-color: #f8efdf; */
+  /* --word-color: hsla(var(--md-hue),15%,21%,1); */
+  
+	--md-hue: 232;
+	/* --md-default-fg-color: hsla(var(--md-hue),75%,95%,1); */
+	--md-default-fg-color: #f8efdf;
+	--md-primary-bg-color: #f8efdf;
+
+	/* --md-default-fg-color: #fff8b5; */
+	--md-default-fg-color--light: hsla(var(--md-hue),75%,90%,0.62);
+	--md-default-fg-color--lighter: hsla(var(--md-hue),75%,90%,0.32);
+	--md-default-fg-color--lightest: hsla(var(--md-hue),75%,90%,0.12);
+
+	/* --md-default-bg-color: hsla(var(--md-hue),15%,21%,1); */
+  /* --md-primary-fg-color: hsla(var(--md-hue),15%,21%,1); */
+  /* --md-primary-fg-color: #3f4152; */
+	/* --md-default-bg-color: #3f4152; */
+  --md-primary-fg-color: #15161b;
+	--md-default-bg-color: #15161b;
+  /* --md-primary-fg-color: #1f2028; */
+	/* --md-default-bg-color: #1f2028; */
+  /* --md-primary-fg-color: #2c2d39; */
+	/* --md-default-bg-color: #2c2d39; */
+
+	--md-default-bg-color--light: hsla(var(--md-hue),15%,21%,0.54);
+	--md-default-bg-color--lighter: hsla(var(--md-hue),15%,21%,0.26);
+	--md-default-bg-color--lightest: hsla(var(--md-hue),15%,21%,0.07);
+	--md-code-fg-color: hsla(var(--md-hue),18%,86%,1);
+	--md-code-bg-color: hsla(var(--md-hue),15%,15%,1);
+	--md-code-hl-color: rgba(66,135,255,0.15);
+	/* --md-code-hl-color: #3f4152; */
+	--md-code-hl-number-color: #e6695b;
+	--md-code-hl-special-color: #f06090;
+	--md-code-hl-function-color: #c973d9;
+	--md-code-hl-constant-color: #9383e2;
+	--md-code-hl-keyword-color: #6791e0;
+	--md-code-hl-string-color: #2fb170;
+	--md-code-hl-name-color: var(--md-code-fg-color);
+	--md-code-hl-operator-color: var(--md-default-fg-color--light);
+	--md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+	--md-code-hl-comment-color: var(--md-default-fg-color--light);
+	--md-code-hl-generic-color: var(--md-default-fg-color--light);
+	--md-code-hl-variable-color: var(--md-default-fg-color--light);
+	--md-typeset-color: var(--md-default-fg-color);
+	/* --md-typeset-a-color: var(--md-primary-fg-color); */
+	/* --md-typeset-mark-color: rgba(66,135,255,0.3); */
+	/* --md-typeset-mark-color: #52503F; */
+	--md-typeset-mark-color: #484848;
+	/* --md-typeset-mark-color: #28271F; */
+	/* --md-typeset-mark-color:#213d27; */
+	--md-typeset-kbd-color: hsla(var(--md-hue),15%,94%,0.12);
+	--md-typeset-kbd-accent-color: hsla(var(--md-hue),15%,94%,0.2);
+	--md-typeset-kbd-border-color: hsla(var(--md-hue),15%,14%,1);
+	--md-typeset-table-color: hsla(var(--md-hue),75%,95%,0.12);
+	--md-admonition-bg-color: hsla(var(--md-hue),0%,100%,0.025);
+	--md-footer-bg-color: hsla(var(--md-hue),15%,12%,0.87);
+	--md-footer-bg-color--dark: hsla(var(--md-hue),15%,10%,1);
+  --md-header-shadow1:  #000000a5;
+  --md-header-shadow2:  rgba(0, 0, 0, 0.593);
+}
+/* .md-typeset mark {
+  display: inline-block;
+  height: .9rem;
+} */
+
+.md-logo {
+  filter: var(--svg-logo-color);
+}
+
+.md-content__inner > h1 {
+  padding: 0 0 0 1.5%;
+  /* background: #355c7d;
+  background: -webkit-linear-gradient(to left, #355c7d, #6c5b7b, #c06c84);
+  background: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84); */
+  color: var(--md-primary-bg-color);
+  font-weight: 900;
+}
+
+.md-content__inner > h2 {
+  padding: 0 0 0 1.5%;
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to left, #8e2de2, #4a00e0);
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+  color: white;
+
+  border-radius: 0.1rem;
+  border: .01rem solid ;
+  border-color: #7e6ca3;
+}
+
+.md-content__inner > h3 {
+  padding: 0.4% 0 0 1.5%;
+  background: #29996a;
+  font-family: 'GangwonEdu_OTFBoldA_한자제거';
+  color: white;
+}
+.md-content__inner > h4 {
+  padding: 0.4% 0 0 1.5%;
+  background: #8f8ce7;
+  font-family: 'GangwonEdu_OTFBoldA_한자제거';
+  color: white;
+}
+
+.md-header--shadow {
+  /* box-shadow: 0 0 .2rem #0000001a,0 .2rem .4rem #0003; */
+  box-shadow: 0 0 .2rem var(--md-header-shadow1),0 .2rem .4rem var(--md-header-shadow2);
+}
+
+.md-typeset .admonition.def,
+.md-typeset details.def {
+  /* font-weight: 800 ; */
+  font-size: .88rem ;
+  border-bottom: .05rem solid ;
+  border-top: .20rem solid ;
+  border-right: .05rem solid ;
+  border-left: .05rem solid ;
+  border-color: var(--def-color) ;
+}
+
+.md-typeset .admonition.def:hover,
+.md-typeset details.def:hover,
+.md-typeset .admonition.def:target,
+.md-typeset details.def:target
+{
+  box-shadow: 0 0 18px 8px var(--def-shadow-color);
+  /* --def-color: var(--md-accent-fg-color); */
+  /* box-shadow: 0 1.5rem 1.9rem rgba(0,0,0,.05),0 0 1.1rem rgba(0,0,0,.1) ; */
+}
+
+.md-typeset .def > .admonition-title,
+.md-typeset .def > summary { 
+  /* background-color: var(--def-title-background); */
+  background-color: #ffffff00;
+  border-bottom: .01rem solid ;
+  border-color: var(--def-title-border-color) ;
+}
+
+.md-typeset .def > .admonition-title::before,
+.md-typeset .def > summary::before {
+  /* -webkit-mask-image: url(../assets/images/bolt-solid.svg) ; */
+  /* mask-image: url(../assets/images/bolt-solid.svg) ; */
+/* ghost-solid.svg */
+  -webkit-mask-image: url(../assets/images/ghost-solid.svg) ;
+  mask-image: url(../assets/images/ghost-solid.svg) ;
+  mask-repeat: no-repeat ;
+  mask-size: contain ;
+  background-color: var(--def-color) ;
+  margin-top: 3px ;
+}
+
+.md-typeset .admonition.paper,
+.md-typeset details.paper {
+  /* font-weight: 800 ; */
+  font-size: .7rem ;
+  border-bottom: .08rem solid ;
+  border-top: .08rem solid ;
+  border-right: .08rem solid ;
+  border-left: .08rem solid ;
+  border-color: var(--def-color) ;
+  /* border-color: #000; */
+  /* box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.219); */
+  /* box-shadow: 0 0 18px 2px var(--def-shadow-color); */
+  /* font-family: NanumGothicCoding; */
+  font-family: D2Coding;
+}
+
+
+.md-typeset .paper > .admonition-title::before,
+.md-typeset .paper > summary::before {
+  /* -webkit-mask-image: url(../assets/images/bolt-solid.svg) ; mask-image: url(../assets/images/bolt-solid.svg) ; */
+  -webkit-mask-image: url(../assets/images/scroll-solid.svg) ; mask-image: url(../assets/images/scroll-solid.svg) ;
+  mask-repeat: no-repeat ;
+  mask-size: contain ;
+  background-color: var(--def-color) ;
+  margin-top: 3px ;
+}
+
+/* div.admonition:nth-child(2) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) */
+
+.toc a {
+  color: var(--md-primary-bg-color) ;
+}
+.toc ul {
+  list-style-type: none;
+  margin-left: 0 !important;
+}
+
+.md-typeset .admonition.toc,
+.md-typeset details.toc {
+  border-color: #00000000;
+  box-shadow: 0 0 18px 8px var(--def-shadow-color);
+  font-family: 'GangwonEdu_OTFBoldA_한자제거';
+}
+
+.md-typeset .toc > .admonition-title,
+.md-typeset .toc > summary { 
+  background-color: #00000000;
+  border-bottom: .00rem solid ;
+}
+
+.md-typeset .toc > .admonition-title::before,
+.md-typeset .toc > summary::before {
+  -webkit-mask-image: url(../assets/images/bars-staggered-solid.svg) ; mask-image: url(../assets/images/bars-staggered-solid.svg) ;
+  mask-repeat: no-repeat ;
+  mask-size: contain ;
+  background-color: currentcolor;
+  /* margin-top: 3px ; */
+}
+
+[dir="ltr"] .md-typeset :is(.admonition-title, summary) {
+  border-left-width: 0rem;
+}
+
+
+.md-typeset .admonition.word,
+.md-typeset details.word {
+  /* font-weight: 800 ; */
+  font-size: .88rem ;
+  border-bottom: .05rem solid ;
+  border-top: .05rem solid ;
+  border-right: .05rem solid ;
+  border-left: .05rem solid ;
+  /* border-color: var(--def-color) ; */
+  border-color: var(--md-default-fg-color);
+}
+
+.md-typeset .word > .admonition-title,
+.md-typeset .word > summary{
+  /* background-color: #fff5ee; */
+  background-color: var(--word-color);
+  /* opacity: 0.1; */
+  border-bottom: .05rem solid ;
+}
+
+.md-typeset .word > .admonition-title::before,
+.md-typeset .word > summary::before {
+  /* -webkit-mask-image: url(../assets/images/scroll-solid.svg) ; mask-image: url(../assets/images/scroll-solid.svg) ; */
+  /* -webkit-mask-image: url(../assets/images/book-solid.svg) ; mask-image: url(../assets/images/book-solid.svg) ; */
+  /* -webkit-mask-image: url(../assets/images/book-bible-solid.svg) ; mask-image: url(../assets/images/book-bible-solid.svg) ; */
+  -webkit-mask-image: url(../assets/images/book-open-solid.svg) ; mask-image: url(../assets/images/book-open-solid.svg) ;
+  mask-repeat: no-repeat ;
+  mask-size: contain ;
+  /* background-color: var(--def-color) ; */
+  background-color: var(--md-default-fg-color);
+  margin-top: 0px ;
+}
+
+div.arithmatex {
+  overflow: visible !important;
+}
+
+.md-typeset div.arithmatex > * {
+  padding: 0 !important;
+}
+
+
+.hangul_fallback {
+  font-family: "GangwonEdu_OTFBoldA",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif !important; 
+  font-size: 0.8rem !important;
+}
+
+/* div.md-sidebar:nth-child(2) */
+
+div.md-main__inner.md-grid div.md-sidebar.md-sidebar--secondary {
+  top: 1.4rem !important;
+}
+
+nav.md-nav.md-nav--secondary, nav.md-nav.md-nav--secondary ul.md-nav__list li.md-nav__item nav.md-nav ul.md-nav__list {
+  font-size: .7rem !important;
+  line-height: 1.2 !important;
+}
+
+mjx-utext {
+  font-family: 'GangwonEdu_OTFLightA_한자제거_줄간격증가', 'Inconsolata' !important;
+  /* font-size: 0.8rem !important; */
+}
+
+.doubled .frac-line{
+  /* box-shadow: 0px -3.8px 0px -0.1px !important; */
+  box-shadow: 0px -3.8px 0px 0px !important;
+  margin-bottom: -0.12em !important;
+}
+
+sup {
+  line-height: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.katex-display {
+  overflow: visible !important;
+  width: auto !important;
+}
+
+.md-typeset__scrollwrap {
+  text-align: center;
+}
+.md-nav__list, .md-header__topic, .md-tabs__list {
+    font-family: 'GangwonEdu_OTFBoldA_한자제거';
+}
+.md-typeset table:not([class]) th {
+  min-width: auto !important;
+  color: black !important;
+  background-color: whitesmoke !important;
+  /* border */
+  /* border: .001rem solid black; */
+  /* padding: 0px; */
+}
+
+/* .md-header-nav__title {
+  line-height: 2.0rem !important;
+}
+
+.md-header {
+  height: 2.0rem !important;
+} */
+
+.md-header-nav__button {
+  margin: .1rem !important;
+}
+
+.md-typeset {
+  font-size: .8rem !important;
+}
+
+.md-header-nav__title {
+  font-size: .7rem !important;
+}
+
+.md-top {
+  font-size: 0px;
+}
+
+li strong {
+  /* color: var(--md-primary-fg-color); */
+  color: var(--md-primary-bg-color) ;
+}
+
+button.md-top.md-icon {
+  top: auto !important;
+  bottom: 64px !important;
+}
+
+.vertical-center {
+  vertical-align: middle !important;
+}
+
+.md-typeset h2 {
+  /* font-size: 1.5625em; */
+  font-size: 2.1em;
+  /* margin: 1.6em 0 .64em */
+  margin: 2.0em 0 .64em
+}
+
+.svg {
+  /* background-color: gray; */
+  background-color: #a8a8a8;
+}
+
+.cite {
+  font-family: Times New Roman, "Inter", "sans-serif";
+}

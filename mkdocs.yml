@@ -1,0 +1,167 @@
+site_name: HGU GHOST
+site_author: HGU GHOST
+site_url: https://HGU-GHOST.netlify.app/
+
+repo_name: Global-Handong-Oriented-Security-Team
+repo_url: https://github.com/Global-Handong-Oriented-Security-Team
+
+nav:
+  - HGU GHOST: index.md
+  - ProgrammerBase: 
+    - README: ProgrammerBase/README.md
+    - Contents:
+      - Day 1: ProgrammerBase/01-Day1/readme.md
+      - Day 2: ProgrammerBase/02-Day2/readme.md
+      - Day 3: ProgrammerBase/03-Day3/readme.md
+      - Day 4: ProgrammerBase/04-Day4/readme.md
+      - Day 5: ProgrammerBase/05-Day5/readme.md
+    - Docker: ProgrammerBase/docker.md
+    - Coding Convention: ProgrammerBase/codingconvention.md
+    - Build System: ProgrammerBase/build.md
+    - Information: ProgrammerBase/information.md
+    - Git: ProgrammerBase/git.md
+    - VSCode: ProgrammerBase/vscode.md
+    - Markdown: ProgrammerBase/markdown.md
+    - Tmux: ProgrammerBase/tmux.md
+    - Vim: ProgrammerBase/vim.md
+    - CLI: ProgrammerBase/cli.md
+  - security tutorial:
+    - README: security-tutorial/README.md
+    - Day1 Base: security-tutorial/01-Base/README.md
+    - Day2 Computer Principle 1: security-tutorial/02-Computer1/README.md
+    - Day3 Computer Principle 2: security-tutorial/03-Computer2/README.md
+    - Day4 Reversing 1: security-tutorial/04-Reversing1/README.md
+    - Day5 Reversing 2: security-tutorial/05-Reversing2/README.md
+    - Day6 Exploit 1: security-tutorial/06-Exploit1/README.md
+    - Day7 Exploit 2: security-tutorial/07-Exploit2/README.md
+    - Day8 Exploit 3: security-tutorial/08-Exploit3/README.md
+    - Day9 Exploit 4: security-tutorial/09-Exploit4/README.md
+    - Day10 Pentesting: security-tutorial/10-Pentesting/README.md
+
+theme: 
+  features:
+    - navigation.tabs
+    - navigation.top
+    - header.autohide
+    # - navigation.instant
+    - navigation.tracking
+    # - navigation.sections
+    - navigation.indexes 
+    - toc.follow
+    # - navigation.instant
+    # - navigation.instant.progress
+    # - navigation.prune 
+
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  # font: false
+  # font:
+  #   text: Nanum Gothic
+  language: en
+  # language: ko
+  # logo: assets/images/bolt-solid.svg
+  # favicon: assets/images/bolt-solid.svg
+  logo: assets/images/ghost-solid.svg
+  favicon: assets/images/ghost-solid.svg
+
+  icon:
+    repo: fontawesome/brands/github
+
+
+extra_javascript:
+  # - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js
+  # - https://kit.fontawesome.com/b27b3e6448.js
+  # --------- katex -----------
+  - javascripts/highlight.min.js
+  - javascripts/b27b3e6448.js
+  - javascripts/config.js
+  - https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js
+  # --------- mathjax -----------
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.3/tex-mml-chtml.js
+  # https://github.com/mathjax/MathJax/releases
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github-gist.min.css
+  - stylesheets/config.css
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - toc:
+      # permalink: "&para;"
+      # permalink: "&quot;"
+      # permalink: "&dagger;"
+      # permalink: "&lambda;"
+      permalink: "&#10004;"
+      # permalink: "&check;"
+      # permalink: "&checkmark;"
+      baselevel: 2
+      toc_depth: 2-4
+  - admonition
+  - sane_lists
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      clickable_checkbox: false
+      custom_checkbox: true
+  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - abbr
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.inlinehilite:
+      custom_inline: 
+      - name: math
+        class: arithmatex
+        format: !!python/object/apply:pymdownx.arithmatex.arithmatex_inline_format {kwds: {mode: mathjax}}
+  - pymdownx.superfences:
+      custom_fences: 
+      - name: math
+        class: arithmatex
+        format: !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {kwds: {mode: mathjax}}
+
+plugins: 
+  - exclude:
+      glob:
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+  - markdown-exec # https://github.com/pawamoy/markdown-exec
+
+# https://github.com/pawamoy/best-of-mkdocs
+# https://github.com/danielfrg/mkdocs-jupyter

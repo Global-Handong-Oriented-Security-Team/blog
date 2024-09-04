@@ -1,0 +1,1 @@
+py config.py -c ; mkdocs serve --dirtyreload -a 0.0.0.0:8000

@@ -1,0 +1,8 @@
+mkdocs-material==9.4.6
+setuptools
+ghp-import 
+pyyaml
+treelib
+mkdocs-exclude
+mkdocs-minify-plugin
+markdown-exec[ansi]

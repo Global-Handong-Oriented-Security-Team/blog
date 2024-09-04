@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block content %}
+<div id="404"></div>
+<h1>Go Home</h1>
+
+<script> 
+document.getElementById("404").innerHTML =
+"<h1>404 - Not found</h1><h1>" + location.pathname + "</h1>";
+setTimeout(function () {
+    // history.go(-1);
+    location.href = "/";
+}, 3000);
+</script>
+{% endblock %}
+{% block disqus %}{% endblock %}

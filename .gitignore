@@ -1,0 +1,6 @@
+site/
+.vscode/
+*.exe
+a.out
+__pycache__/
+test*
